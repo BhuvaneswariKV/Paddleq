@@ -1,0 +1,25 @@
+{
+		"input":
+				{
+				
+				"name":"gopaddle1-component"
+				
+				},
+		"output":
+			
+	   			{
+				   "id":"JSONINT",
+				   "service":"JSONARRAY",
+				   "lang_type":"JSONSTRING",
+				   "created_time":"JSONSTRING",
+				   "name":"gopaddle-component",
+				   "ports":"",
+				   "updated_time":"JSONSTRING",
+				   "status":"Pending",
+				   "component_level":"JSONINT",
+				   "platform":"JSONSTRING"
+
+
+				}
+			
+}

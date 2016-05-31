@@ -1,0 +1,17 @@
+{ 	     	
+        	"input":  
+			{
+			"expose_ports":{
+							"##PORT":"##ALTERNATEPORT"
+			},
+			"app_name":"##APPNAME",
+			"kube_id":"##KUBEID",
+			"cDelivery":false,
+			"autoScale":false,
+			"pod_per_container":false
+			}		   
+			,
+			"output":
+			{
+			}				
+}

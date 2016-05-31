@@ -1,0 +1,16 @@
+{
+            "input":
+			{
+ 				"name":"##KUBENAME",
+ 				"initialNodeCount":"##KUBENODECOUNT",
+ 				"diskSize":"##KUBEDISKSIZE",
+ 				"machine_type":"##KUBEMACHINETYPE",
+ 				"project_id":"##KUBEPROJECTID",
+ 				"zone":"##KUBEZONE"
+ 			}, 
+            "output" : 
+            {
+ 	
+			}
+}
+ 

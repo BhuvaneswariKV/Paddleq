@@ -1,0 +1,27 @@
+{ 	     	
+        	"input":
+        	  {
+			   "component_type":"Repository",
+			   "repo":{
+					      "repo_path":"##REPOPATH",
+					      "repo_provider":"github"
+					   },
+			   "networks": {
+			   "ports":"##PORT"
+			   },
+			   "platform":"##PLATFORM",
+			   "script":{
+					      "start_script":"##STARTSCRIPT",
+					     "build":"##BUILDPACKAGE",
+					   	 "builder":"##BUILDER"
+			   			}
+			  
+			},
+			
+			"output":
+			{
+			
+			}
+			
+	}
+				

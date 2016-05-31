@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.3"?>
+<plugin>
+<!--it is important for launch which specify run as -->
+<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+    <launchConfigurationType
+        name="launch GOPADDLE"
+        delegate="com.config.plugin.ExampleLaunchConfigurationDelegate"
+        modes="run, debug"               
+        id="com.example.launchConfigurationType">        
+    </launchConfigurationType>
+</extension> 
+
+<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+		<launchConfigurationTypeImage
+			configTypeID="com.example.launchConfigurationType"
+			icon="icons/configurationIcon.jpg" id="com.gopaddle.launchConfigurationType.image">
+		</launchConfigurationTypeImage>
+	</extension>
+
+<extension point="org.eclipse.debug.ui.launchShortcuts">
+		<shortcut 
+		class="com.config.plugin.GopaddleLaunchShortcut"
+        icon="icons/paddle.png"
+        id="com.example.sample.shortcut"
+        label="Launch as gopaddle"
+        modes="run, debug">
+        <contextualLaunch>
+            <enablement>
+                <with
+                    variable="selection">
+                    <count
+                        value="+">
+                    </count>
+                </with>
+            </enablement>
+        </contextualLaunch>
+<!--		
+			class="JettyLaunchShortcut"
+			description="Launches a Jetty on the selected project." icon="icons/jetty.gif"
+			id="net.sourceforge.eclipsejetty.launch.shortcut.JettyLaunchShortcut"
+			label="Run with Jetty" modes="run, debug">
+
+			<contextualLaunch>
+				<enablement>
+					<with variable="selection">
+						<count value="1" />
+						<iterate>
+							<and>
+								<adapt type="org.eclipse.core.resources.IResource">
+		   							<test forcePluginActivation="true" />
+		                		</adapt>
+							</and>
+						</iterate>
+					</with>
+				</enablement>
+			</contextualLaunch>
+
+			
+			<description description="Run Project with Jetty" mode="run">
+			</description>
+			<description description="Debug Project with Jetty" mode="debug">
+			</description>
+		-->
+		</shortcut>
+	</extension>
+	
+	
+
+</plugin>

@@ -1,0 +1,35 @@
+{
+            "input" : { 
+					   "name":"gopaddle",
+					   "component_type":"Service",
+					   "repo_handle":"git@thirunavukkarasumca",
+					   "service":[  
+					      {  
+					         "name":"string",
+					         "verb":"C,R,U,D,S",
+					         "DOM":[  
+					            {  
+					               "field_name":"f1",
+					               "field_type":"f2"
+					            }
+					         ]
+					      }     
+					   ],
+					   "lang_type":"jaxrs",
+					   "port":"8080,9090"
+					}, 
+            "output" : 
+                {
+				   "name":"JSONSTRING",
+				   "ports":"",
+				   "service":"JSONARRAY",
+				   "lang_type":"jaxrs",
+				   "updated_time":"JSONSTRING",
+				   "status":"Pending",
+				   "id":"JSONINT",
+				   "component_level":1,
+				   "platform":"java",
+				   "created_time":"JSONSTRING"
+				                       	
+                }
+}
